@@ -11,9 +11,10 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: .
-    repoURL: https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx
-    targetRevision: 3.31.0
+    path: ''
+    repoURL: https://kubernetes.github.io/ingress-nginx
+    chart: ingress-nginx
+    targetRevision: '3.31.0'
     # helm:
     #   parameters:
     #   - name: app
