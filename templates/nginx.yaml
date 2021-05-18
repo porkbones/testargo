@@ -11,10 +11,12 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: ''
     repoURL: https://kubernetes.github.io/ingress-nginx
     chart: ingress-nginx
     targetRevision: '3.31.0'
+    helm:
+      valueFiles:
+        - nginx/values.yaml
   syncPolicy:
     automated:
       prune: true
