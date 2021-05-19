@@ -1,9 +1,0 @@
-controller:
-  hostPort:
-    enabled: false
-    ports:
-      http: 80
-      https: 443
-
-  service:
-    type: ClusterIP
